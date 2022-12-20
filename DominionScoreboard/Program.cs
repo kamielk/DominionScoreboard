@@ -1,9 +1,11 @@
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
-using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
+using Dominion.Services;
 using DominionScoreboard.Data;
+using DominionScoreboard.Games;
 using DominionScoreboard.Models;
+using FluentValidation;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,8 +24,20 @@ builder.Services.AddIdentityServer()
 builder.Services.AddAuthentication()
     .AddIdentityServerJwt();
 
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddJsonOptions(opt =>
+     {
+         opt.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+         opt.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+     });;
+
 builder.Services.AddRazorPages();
+
+// register dominion scoreboard services
+builder.Services.RegisterDominionScoreboardService(builder.Configuration);
+
+// register IValidator implementations
+builder.Services.AddValidatorsFromAssemblyContaining<CreateGameRequestValidator>();
 
 var app = builder.Build();
 
@@ -50,8 +64,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");
 app.MapRazorPages();
+app.MapControllers();
 
 app.MapFallbackToFile("index.html");
-;
-
 app.Run();
