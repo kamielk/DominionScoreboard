@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DominionScoreboard", "DominionScoreboard\DominionScoreboard.csproj", "{BDB48582-DF97-49C9-9F48-4F90DE698C63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard.Services", "Scoreboard.Services\Scoreboard.Services.csproj", "{66F928B4-CCA4-40CA-AA48-EA16D7DBD28F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard.Data", "Scoreboard.Data\Scoreboard.Data.csproj", "{147B10BC-ABC0-49A9-B530-F8FAA42C5307}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{BDB48582-DF97-49C9-9F48-4F90DE698C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDB48582-DF97-49C9-9F48-4F90DE698C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDB48582-DF97-49C9-9F48-4F90DE698C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66F928B4-CCA4-40CA-AA48-EA16D7DBD28F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66F928B4-CCA4-40CA-AA48-EA16D7DBD28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66F928B4-CCA4-40CA-AA48-EA16D7DBD28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66F928B4-CCA4-40CA-AA48-EA16D7DBD28F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147B10BC-ABC0-49A9-B530-F8FAA42C5307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147B10BC-ABC0-49A9-B530-F8FAA42C5307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147B10BC-ABC0-49A9-B530-F8FAA42C5307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147B10BC-ABC0-49A9-B530-F8FAA42C5307}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
