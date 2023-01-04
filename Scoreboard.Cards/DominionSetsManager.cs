@@ -1,43 +1,50 @@
+using System.Net.Mime;
+using System.Reflection;
 using Scoreboard.Cards.Algorithms;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
 
 namespace Scoreboard.Cards;
 
-public class DominionSetsManager : IDominionSetsManager
+public class DominionSetManager : IDominionSetManager
 {
-    public IEnumerable<ICard> GetExpansion(string dominionSetYml)
+    public IEnumerable<DominionSet> GetAllSets()
     {
+        // get all yaml files in Expansions
+        var assembly = Assembly.GetExecutingAssembly();
+        var setPaths = assembly.GetManifestResourceNames();
+
         var deserializer = new DeserializerBuilder()
             .WithNamingConvention(CamelCaseNamingConvention.Instance)
             .Build();
 
-        var expansion = deserializer.Deserialize<DominionSetFile>(dominionSetYml);
-
-        if (expansion is null)
+        // deserialize each set file and return as a DominionSet
+        foreach (var path in setPaths)
         {
-            throw new ArgumentException("failed to deserialize given dominion set yml");
-        }
+            using var stream = assembly.GetManifestResourceStream(path);
+            using var reader = new StreamReader(stream);
+            var yml = reader.ReadToEnd();
 
-        return expansion.Cards.Select(card => ToCard(card, expansion.Name)).ToList();
+            var setFile = deserializer.Deserialize<DominionSetFile>(yml);
+            
+            yield return new DominionSet
+            {
+                Name = setFile.Name,
+                Cards = setFile.Cards?.Select(representation => new Card
+                {
+                    Name = representation.Name,
+                    Expansion = setFile.Name,
+                    Types = representation.Types,
+                    Cost = representation.Cost,
+                    Algorithms = GetVpAlgorithms(representation)
+                }) ?? Enumerable.Empty<ICard>()
+            };
+        }
     }
 
-    /// <summary>
-    /// Creates a <see cref="ICard"/> from a <see cref="CardRepresentation"/>
-    /// </summary>
-    /// <param name="representation"><seealso cref="CardRepresentation"/></param>
-    /// <param name="expansionName">name of the expansion</param>
-    /// <returns></returns>
-    private ICard ToCard(CardRepresentation representation, string expansionName)
+    public DominionSet? GetSet(string name)
     {
-        return new Card
-        {
-            Name = representation.Name,
-            Expansion = expansionName,
-            Types = representation.Types,
-            Cost = representation.Cost,
-            Algorithms = GetVpAlgorithms(representation)
-        };
+        return GetAllSets().FirstOrDefault(set => set.Name == name);
     }
 
     private IEnumerable<IVpAlgorithm> GetVpAlgorithms(CardRepresentation card)

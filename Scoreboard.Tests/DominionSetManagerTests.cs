@@ -4,16 +4,16 @@ namespace Scoreboard.Tests;
 
 public class DominionSetManagerTests
 {
-    [Theory]
-    [InlineData("../../../../Scoreboard.Cards/Expansions/base-cards.yaml")]
-    [InlineData("../../../../Scoreboard.Cards/Expansions/base-set-2.yaml")]
-    public void CanLoadCardsWithoutException(string cardsPath)
+    [Fact]
+    public void CanLoadCardsWithoutException()
     {
-        var expansionManager = new DominionSetsManager();
+        // arrange
+        var setManager = new DominionSetManager();
 
-        var cardsYml = File.ReadAllText(cardsPath);
-        var cards = expansionManager.GetExpansion(cardsYml);
+        // act
+        var allSets = setManager.GetAllSets();
         
-        Assert.NotEmpty(cards);
+        // assert
+        Assert.NotEmpty(allSets);
     }
 }
