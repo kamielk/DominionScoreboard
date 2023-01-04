@@ -21,7 +21,7 @@ public interface ICard
     /// A card's cost
     /// </summary>
     /// <example>
-    /// { {"treasure", 1}, {"potion", 1} }
+    /// { {"coin", 1}, {"potion", 1} }
     /// </example>
     IDictionary<string, int> Cost { get; }
 

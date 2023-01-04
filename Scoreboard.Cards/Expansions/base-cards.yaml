@@ -2,39 +2,39 @@ name: "base cards"
 cards:
   - name: Copper
     cost:
-      treasure: 0
+      coin: 0
     types: [ "treasure" ]
   - name: Silver
     cost:
-      treasure: 3
+      coin: 3
     types: [ "treasure" ]
   - name: Gold
     cost:
-      treasure: 6
+      coin: 6
     types: [ "treasure" ]  
   - name: Estate
     cost:
-      treasure: 2
+      coin: 2
     types: [ "victory" ]
     victoryPoints: 1
 
   - name: Estate
     cost:
-      treasure: 2
+      coin: 2
     types: [ "victory" ]
     victoryPoints: 1
   - name: Duchy
     cost:
-      treasure: 5
+      coin: 5
     types: [ "victory" ]
     victoryPoints: 3
   - name: Province
     cost:
-      treasure: 8
+      coin: 8
     types: [ "victory" ]
     victoryPoints: 6
   - name: Curse
     cost:
-      treasure: 0
+      coin: 0
     types: [ "curse" ]
     victoryPoints: -1
