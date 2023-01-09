@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard.Services", "Scor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard.Data", "Scoreboard.Data\Scoreboard.Data.csproj", "{147B10BC-ABC0-49A9-B530-F8FAA42C5307}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard.Tests", "Scoreboard.Tests\Scoreboard.Tests.csproj", "{5A2E751D-E364-41EF-89F3-D774B81E633A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard.Cards", "Scoreboard.Cards\Scoreboard.Cards.csproj", "{FC8BD905-C97A-4412-9213-97D24E3FED7B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{147B10BC-ABC0-49A9-B530-F8FAA42C5307}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{147B10BC-ABC0-49A9-B530-F8FAA42C5307}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{147B10BC-ABC0-49A9-B530-F8FAA42C5307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A2E751D-E364-41EF-89F3-D774B81E633A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A2E751D-E364-41EF-89F3-D774B81E633A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A2E751D-E364-41EF-89F3-D774B81E633A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A2E751D-E364-41EF-89F3-D774B81E633A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8BD905-C97A-4412-9213-97D24E3FED7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8BD905-C97A-4412-9213-97D24E3FED7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8BD905-C97A-4412-9213-97D24E3FED7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8BD905-C97A-4412-9213-97D24E3FED7B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Scoreboard.Cards\Scoreboard.Cards.csproj" />
       <ProjectReference Include="..\Scoreboard.Data\Scoreboard.Data.csproj" />
     </ItemGroup>
 
