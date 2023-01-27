@@ -1,5 +1,6 @@
 using System.Net.Mime;
 using System.Reflection;
+using System.Text.Json;
 using Scoreboard.Cards.Algorithms;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
@@ -10,22 +11,18 @@ public class DominionSetManager : IDominionSetManager
 {
     public IEnumerable<DominionSet> GetAllSets()
     {
-        // get all yaml files in Expansions
+        // get all json files in Sets
         var assembly = Assembly.GetExecutingAssembly();
         var setPaths = assembly.GetManifestResourceNames();
-
-        var deserializer = new DeserializerBuilder()
-            .WithNamingConvention(CamelCaseNamingConvention.Instance)
-            .Build();
 
         // deserialize each set file and return as a DominionSet
         foreach (var path in setPaths)
         {
             using var stream = assembly.GetManifestResourceStream(path);
             using var reader = new StreamReader(stream);
-            var yml = reader.ReadToEnd();
+            var json = reader.ReadToEnd();
 
-            var setFile = deserializer.Deserialize<DominionSetFile>(yml);
+            var setFile = JsonSerializer.Deserialize<DominionSetFile>(json);
             
             yield return new DominionSet
             {

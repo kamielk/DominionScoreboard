@@ -1,0 +1,293 @@
+{
+  "name": "Renaissance",
+  "cards": [
+    {
+      "name": "Border Guard",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Ducat",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": [
+        "trashing",
+        "+buy"
+      ]
+    },
+    {
+      "name": "Lackeys",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Acting Troupe",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Cargo Ship",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Experiment",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Improve",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Flag Bearer",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Hideout",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing",
+        "+action"
+      ]
+    },
+    {
+      "name": "Inventor",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Mountain Village",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Patron",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Priest",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Research",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Silk Merchant",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Old Witch",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Recruiter",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Scepter",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Scholar",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Sculptor",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Seer",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Spices",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Swashbuckler",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Treasurer",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Villain",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    }
+  ]
+}

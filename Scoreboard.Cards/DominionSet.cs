@@ -1,8 +1,11 @@
-﻿namespace Scoreboard.Cards;
+﻿using System.Diagnostics;
+
+namespace Scoreboard.Cards;
 
 /// <summary>
 /// A set of dominion cards
 /// </summary>
+[DebuggerDisplay("{Name}")]
 public class DominionSet
 {
     /// <summary>

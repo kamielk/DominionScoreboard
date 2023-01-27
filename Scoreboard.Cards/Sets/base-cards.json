@@ -1,0 +1,82 @@
+{
+  "name": "Base",
+  "cards": [
+    {
+      "name": "Copper",
+      "cost": {
+        "treasure": 0
+      },
+      "types": [
+        "treasure"
+      ]
+    },
+    {
+      "name": "Silver",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "treasure"
+      ]
+    },
+    {
+      "name": "Gold",
+      "cost": {
+        "treasure": 6
+      },
+      "types": [
+        "treasure"
+      ]
+    },
+    {
+      "name": "Estate",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "victory"
+      ],
+      "victoryPoints": 1
+    },
+    {
+      "name": "Estate",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "victory"
+      ],
+      "victoryPoints": 1
+    },
+    {
+      "name": "Duchy",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "victory"
+      ],
+      "victoryPoints": 3
+    },
+    {
+      "name": "Province",
+      "cost": {
+        "treasure": 8
+      },
+      "types": [
+        "victory"
+      ],
+      "victoryPoints": 6
+    },
+    {
+      "name": "Curse",
+      "cost": {
+        "treasure": 0
+      },
+      "types": [
+        "curse"
+      ],
+      "victoryPoints": -1
+    }
+  ]
+}

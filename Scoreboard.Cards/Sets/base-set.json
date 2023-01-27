@@ -1,0 +1,289 @@
+{
+  "name": "Dominion",
+  "cards": [
+    {
+      "name": "Adventurer",
+      "cost": {
+        "treasure": 6
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Bureaucrat",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Cellar",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Chancellor",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Chapel",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Council Room",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Feast",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Festival",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "+action"
+      ]
+    },
+    {
+      "name": "Gardens",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "victory"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Laboratory",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Library",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Market",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Militia",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Mine",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Moat",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "reaction"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Moneylender",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Remodel",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Smithy",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Spy",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Thief",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Throne Room",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Village",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Witch",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Woodcutter",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Workshop",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    }
+  ]
+}

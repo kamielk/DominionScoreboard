@@ -1,0 +1,381 @@
+{
+  "name": "Allies",
+  "cards": [
+    {
+      "name": "Bauble",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "treasure",
+        "liaison"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Sycophant",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "liaison"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Townsfolk",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Augurs",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "trashing",
+        "+buy",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Clashes",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "attack",
+        "victory",
+        "duration"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Forts",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "victory",
+        "duration"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Importer",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "duration",
+        "liaison"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Merchant Camp",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Odysseys",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "treasure",
+        "victory",
+        "duration"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Sentinel",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Underling",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "liaison"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Wizards",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "attack",
+        "duration",
+        "liaison"
+      ],
+      "abilities": [
+        "trashing",
+        "+action"
+      ]
+    },
+    {
+      "name": "Broker",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "liaison"
+      ],
+      "abilities": [
+        "trashing",
+        "+action"
+      ]
+    },
+    {
+      "name": "Carpenter",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Courier",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Innkeeper",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [],
+      "abilities": []
+    },
+    {
+      "name": "Royal Galley",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "duration"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Town",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "+action"
+      ]
+    },
+    {
+      "name": "Barbarian",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Capital City",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Contract",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "treasure",
+        "duration",
+        "liaison"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Emissary",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "liaison"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Galleria",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Guildmaster",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "liaison"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Highwayman",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack",
+        "duration"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Hunter",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Modify",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Skirmisher",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Specialist",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Swap",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Marquis",
+      "cost": {
+        "treasure": 6
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "multidraw"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "name": "Guilds",
+  "cards": [
+    {
+      "name": "Advisor",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Baker",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Butcher",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Candlestick Maker",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Doctor",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Herald",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Journeyman",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Masterpiece",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Merchant Guild",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Plaza",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Soothsayer",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Stonemason",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Taxman",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    }
+  ]
+}

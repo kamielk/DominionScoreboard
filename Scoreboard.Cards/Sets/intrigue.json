@@ -1,0 +1,303 @@
+{
+  "name": "Intrigue",
+  "cards": [
+    {
+      "name": "Nobles",
+      "cost": {
+        "treasure": 6
+      },
+      "types": [
+        "action",
+        "victory"
+      ],
+      "abilities": [
+        "+action",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Conspirator",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Mining Village",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Secret Chamber",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "reaction"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Coppersmith",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Pawn",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Courtyard",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Trading Post",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Scout",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Duke",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "victory"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Baron",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Swindler",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Bridge",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Torturer",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Wishing Well",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Masquerade",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Ironworks",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Steward",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Harem",
+      "cost": {
+        "treasure": 6
+      },
+      "types": [
+        "treasure",
+        "victory"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Minion",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Saboteur",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Upgrade",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Tribute",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Great Hall",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "victory"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Shanty Town",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action",
+        "multidraw"
+      ]
+    }
+  ]
+}

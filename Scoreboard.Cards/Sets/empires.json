@@ -1,0 +1,280 @@
+{
+  "name": "Empires",
+  "cards": [
+    {
+      "name": "Engineer",
+      "cost": {
+        "debt": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "City Quarter",
+      "cost": {
+        "debt": 8
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Overlord",
+      "cost": {
+        "debt": 8
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Royal Blacksmith",
+      "cost": {
+        "debt": 8
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Encampment / Plunder",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Patrician / Emporium",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Settlers / Bustling Village",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Castles",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "victory"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Catapult / Rocks",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Chariot Race",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Enchantress",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "attack",
+        "duration"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Farmers Market",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Gladiator / Fortune",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Sacrifice",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing",
+        "+action",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Temple",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Villa",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Archive",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Capital",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Charm",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Crown",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "treasure"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Forum",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Groundskeeper",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Legionary",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Wild Hunt",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    }
+  ]
+}

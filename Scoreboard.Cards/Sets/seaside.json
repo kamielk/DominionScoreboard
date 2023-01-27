@@ -1,0 +1,300 @@
+{
+  "name": "Seaside",
+  "cards": [
+    {
+      "name": "Ghost Ship",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Smugglers",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Salvager",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing",
+        "+buy"
+      ]
+    },
+    {
+      "name": "Haven",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Ambassador",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Sea Hag",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Native Village",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Navigator",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Tactician",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": [
+        "+buy",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Fishing Village",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Island",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "victory"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Wharf",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": [
+        "+buy",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Bazaar",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Treasure Map",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Explorer",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Lookout",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Treasury",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Cutpurse",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Caravan",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Warehouse",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Lighthouse",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Pirate Ship",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Pearl Diver",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Merchant Ship",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Embargo",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Outpost",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": []
+    }
+  ]
+}

@@ -1,0 +1,399 @@
+{
+  "name": "Nocturne",
+  "cards": [
+    {
+      "name": "Druid",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "fate"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Faithful Hound",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "reaction"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Guardian",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "reaction",
+        "duration",
+        "night"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Monastery",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "night"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Pixie",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "fate"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Tracker",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action",
+        "fate"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Changeling",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "night"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Fool",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "fate"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Ghost Town",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "duration",
+        "night"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Leprechaun",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "doom"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Night Watchman",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "night"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Secret Cave",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "duration"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Bard",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "fate"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Blessed Village",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "fate"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Cemetery",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "victory"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Conclave",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Devil's Workshop",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "night"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Exorcist",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "night"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Necromancer",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Shepherd",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Skulk",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "attack",
+        "fate",
+        "doom"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Cobbler",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "duration",
+        "night"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Crypt",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "duration",
+        "night"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Cursed Village",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "doom"
+      ],
+      "abilities": [
+        "+action"
+      ]
+    },
+    {
+      "name": "Den of Sin",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "duration",
+        "night"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Idol",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "attack",
+        "treasure",
+        "fate"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Pooka",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Sacred Grove",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "fate"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Tormentor",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack",
+        "doom"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Tragic Hero",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Vampire",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "attack",
+        "doom",
+        "night"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Werewolf",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack",
+        "doom",
+        "night"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Raider",
+      "cost": {
+        "treasure": 6
+      },
+      "types": [
+        "attack",
+        "duration",
+        "night"
+      ],
+      "abilities": []
+    }
+  ]
+}

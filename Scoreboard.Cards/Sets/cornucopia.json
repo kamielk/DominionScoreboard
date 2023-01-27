@@ -1,0 +1,155 @@
+{
+  "name": "Cornucopia",
+  "cards": [
+    {
+      "name": "Harvest",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Young Witch",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Horse Traders",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action",
+        "reaction"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Tournament",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Hamlet",
+      "cost": {
+        "treasure": 2
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "+action"
+      ]
+    },
+    {
+      "name": "Jester",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Fortune Teller",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Fairgrounds",
+      "cost": {
+        "treasure": 6
+      },
+      "types": [
+        "victory"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Horn of Plenty",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Hunting Party",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Menagerie",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Farming Village",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "+action"
+      ]
+    },
+    {
+      "name": "Remake",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    }
+  ]
+}

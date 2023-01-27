@@ -1,0 +1,290 @@
+{
+  "name": "Prosperity",
+  "cards": [
+    {
+      "name": "Bank",
+      "cost": {
+        "treasure": 7
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "City",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "+action",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Contraband",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Counting House",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Bishop",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Grand Market",
+      "cost": {
+        "treasure": 6
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Goons",
+      "cost": {
+        "treasure": 6
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "+buy"
+      ]
+    },
+    {
+      "name": "Watchtower",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action",
+        "reaction"
+      ],
+      "abilities": [
+        "trashing",
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Expand",
+      "cost": {
+        "treasure": 7
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "King's Court",
+      "cost": {
+        "treasure": 7
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Hoard",
+      "cost": {
+        "treasure": 6
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Peddler",
+      "cost": {
+        "treasure": 8
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Monument",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Forge",
+      "cost": {
+        "treasure": 7
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Rabble",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Talisman",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Mint",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Loan",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": [
+        "trashing"
+      ]
+    },
+    {
+      "name": "Trade Route",
+      "cost": {
+        "treasure": 3
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "trashing",
+        "+buy"
+      ]
+    },
+    {
+      "name": "Quarry",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Royal Seal",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Mountebank",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action",
+        "attack"
+      ],
+      "abilities": []
+    },
+    {
+      "name": "Worker's Village",
+      "cost": {
+        "treasure": 4
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "+buy",
+        "+action"
+      ]
+    },
+    {
+      "name": "Vault",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "action"
+      ],
+      "abilities": [
+        "multidraw"
+      ]
+    },
+    {
+      "name": "Venture",
+      "cost": {
+        "treasure": 5
+      },
+      "types": [
+        "treasure"
+      ],
+      "abilities": []
+    }
+  ]
+}
