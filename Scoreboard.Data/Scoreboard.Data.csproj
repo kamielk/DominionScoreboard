@@ -1,14 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <RootNamespace>Dominion.Data</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="MongoDB.Bson" Version="2.18.0" />
+      <PackageReference Include="MongoDB.Bson" Version="3.4.0" />
     </ItemGroup>
 
 </Project>
