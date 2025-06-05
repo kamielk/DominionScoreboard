@@ -12,18 +12,6 @@ public class CardRepresentation
     public string Expansion { get; init; } = null!;
     public IDictionary<string, int> Cost { get; init; } = null!;
     public IEnumerable<string> Types { get; init; } = null!;
-
-    /// <summary>
-    /// How many points this card innately gives
-    /// </summary>
-    public int VictoryPoints { get; set; }
     
-    public VpAlgorithmRepresentation VpAlgorithm { get; set; }
-
-    public class VpAlgorithmRepresentation
-    {
-        public string Name { get; set; }
-        public double Modifier { get; set; } = 0;
-        public string Filter { get; set; }
-    }
+    public string? VpAlgorithm { get; set; }
 }

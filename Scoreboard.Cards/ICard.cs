@@ -34,5 +34,5 @@ public interface ICard
     /// Gets the amount of victory points this card gives at the end of the game
     /// </summary>
     /// <param name="playerCards">the player's cards</param>
-    int GetVictoryPoints(ICollection<ICard> playerCards);
+    // TODO: int GetVictoryPoints(ICollection<ICard> playerCards);
 }
