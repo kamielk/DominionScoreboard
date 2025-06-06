@@ -3,12 +3,11 @@
   "cards": [
     {
       "name": "Copper",
-      "cost": {
-        "treasure": 0
-      },
+      "cost": {},
       "types": [
         "treasure"
-      ]
+      ],
+      "abilities": []
     },
     {
       "name": "Silver",
@@ -17,7 +16,8 @@
       },
       "types": [
         "treasure"
-      ]
+      ],
+      "abilities": []
     },
     {
       "name": "Gold",
@@ -26,7 +26,8 @@
       },
       "types": [
         "treasure"
-      ]
+      ],
+      "abilities": []
     },
     {
       "name": "Estate",
@@ -34,19 +35,10 @@
         "treasure": 2
       },
       "types": [
-        "victory"
+        "treasure"
       ],
-      "victoryPoints": 1
-    },
-    {
-      "name": "Estate",
-      "cost": {
-        "treasure": 2
-      },
-      "types": [
-        "victory"
-      ],
-      "victoryPoints": 1
+      "abilities": [],
+      "vpAlg": "1"
     },
     {
       "name": "Duchy",
@@ -54,9 +46,10 @@
         "treasure": 5
       },
       "types": [
-        "victory"
+        "treasure"
       ],
-      "victoryPoints": 3
+      "abilities": [],
+      "vpAlg": "3"
     },
     {
       "name": "Province",
@@ -64,19 +57,19 @@
         "treasure": 8
       },
       "types": [
-        "victory"
+        "treasure"
       ],
-      "victoryPoints": 6
+      "abilities": [],
+      "vpAlg": "6"
     },
     {
       "name": "Curse",
-      "cost": {
-        "treasure": 0
-      },
+      "cost": {},
       "types": [
-        "curse"
+        "treasure"
       ],
-      "victoryPoints": -1
+      "abilities": [],
+      "vpAlg": "-1"
     }
   ]
 }

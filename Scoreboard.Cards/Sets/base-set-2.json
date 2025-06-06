@@ -1,5 +1,5 @@
 {
-  "name": "Dominion II",
+  "name": "Base Set (2nd)",
   "cards": [
     {
       "name": "Bureaucrat",
@@ -70,7 +70,8 @@
       "types": [
         "victory"
       ],
-      "abilities": []
+      "abilities": [],
+      "vpAlg": "?"
     },
     {
       "name": "Laboratory",
