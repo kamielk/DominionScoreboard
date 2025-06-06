@@ -121,4 +121,12 @@ public class VpAlgorithmTests
         var result = VpAlgorithmParser.Evaluate("count(*)", deck);
         result.ShouldBe(0);
     }
+
+
+    [Fact]
+    public void NegativeInteger_ShouldWork()
+    {
+        var result = VpAlgorithmParser.Evaluate("-1", new());
+        result.ShouldBe(-1);
+    }
 }

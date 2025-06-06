@@ -26,7 +26,7 @@ public static class VpAlgorithmParser
                                     if (isDistinct)
                                     {
                                         // e.g., "name" from "distinct:name"
-                                        var actualField = firstToken[ExpressionConstants.Distinct.Length..].TrimStart(); 
+                                        var actualField = firstToken[ExpressionConstants.Distinct.Length..].TrimStart();
                                         return new CountExpr(value, ExpressionConstants.Any, Distinct: true);
                                     }
 
@@ -38,7 +38,12 @@ public static class VpAlgorithmParser
 
     // Simple integer constant
     private static readonly Parser<IExpression<double>> ConstExpr =
-        Parse.Number.Select(n => new ConstExpr(int.Parse(n)));
+    Parse.Char('-').Or(Parse.Char('+')).Optional()
+        .Then(sign => Parse.Number.Select(number =>
+        {
+            var prefix = sign.IsDefined ? sign.Get().ToString() : "";
+            return new ConstExpr(double.Parse(prefix + number));
+        }));
 
     // Binary operator parser: e.g. "count(...) / 3"
     private static readonly Parser<string> Operator =
@@ -49,10 +54,10 @@ public static class VpAlgorithmParser
             .Text();
 
     private static readonly Parser<IExpression<double>> BinaryExpr =
-        Parse.ChainOperator(Operator.Token(),
-            CountExpr.Or(ConstExpr),
-            (op, left, right) => new BinaryExpr(left, op, right)
-        );
+       Parse.ChainOperator(Operator.Token(),
+           CountExpr.Or(ConstExpr),
+           (op, left, right) => new BinaryExpr(left, op, right)
+       );
 
     // Identifier: letters only
     private static readonly Parser<string> Identifier = Parse.Letter.AtLeastOnce().Text();
