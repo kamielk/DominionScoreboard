@@ -44,7 +44,8 @@ public class DominionSetManager : IDominionSetManager
             yield return new DominionSet
             {
                 Name = setFile.Name,
-                Cards = setFile.Cards?.Select(representation => new Card(representation.Name, setFile.Name, representation.Cost, representation.Types)) ?? Enumerable.Empty<ICard>()
+                Cards = setFile.Cards?
+                    .Select(representation => new Card(representation.Name, setFile.Name, representation.Cost, representation.Types)) ?? Enumerable.Empty<ICard>()
             };
         }
     }

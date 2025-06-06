@@ -17,4 +17,8 @@
     <ProjectReference Include="..\Scoreboard.Cards\Scoreboard.Cards.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\images\base-set-2nd\" />
+  </ItemGroup>
+
 </Project>

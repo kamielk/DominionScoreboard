@@ -1,4 +1,5 @@
 using Scoreboard.Cards;
+using Scoreboard.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +9,22 @@ builder.Services.AddOpenApi();
 builder.Services.AddLogging();
 builder.Services.RegisterDominionExpansionManager();
 
+builder.Services.AddCors(options => {
+    options.AddDefaultPolicy(policy =>
+    {
+        var corsConfig = builder.Configuration
+            .GetSection("Cors")
+            .Get<CorsConfig>() ?? throw new InvalidOperationException("Cors section missing from appsettings");
+        
+        policy.WithOrigins(corsConfig.AllowedOrigins)
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
+
 var app = builder.Build();
+app.UseStaticFiles();
+app.UseCors();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -15,7 +15,7 @@ public interface ICard
     /// <summary>
     /// In which expansion this card is included
     /// </summary>
-    string Expansion { get; }
+    string Set { get; }
     
     /// <summary>
     /// A card's cost
@@ -29,6 +29,11 @@ public interface ICard
     /// A card's types
     /// </summary>
     IEnumerable<string> Types { get; }
+
+    /// <summary>
+    /// Url where the image for this card is served
+    /// </summary>
+    string ImageUrl { get; }
 
     /// <summary>
     /// Gets the amount of victory points this card gives at the end of the game

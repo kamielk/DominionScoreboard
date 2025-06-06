@@ -1,0 +1,14 @@
+@if (loading){
+<div>Loading kingdom...</div>
+}
+@else {
+<mat-grid-list cols="5" rowHeight="1:1" class="kingdom-grid">
+    @for (card of kingdom; track $index) {
+        <mat-grid-tile>
+            <app-card-display [card]="card"></app-card-display>
+        </mat-grid-tile>
+    }
+</mat-grid-list>
+}
+
+<button (click)="loadKingdom()">Reroll Kingdom</button>
