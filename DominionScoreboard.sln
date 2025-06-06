@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36127.28 d17.14
+VisualStudioVersion = 17.14.36127.28
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard.Services", "Scoreboard.Services\Scoreboard.Services.csproj", "{66F928B4-CCA4-40CA-AA48-EA16D7DBD28F}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard.Tests", "Scoreboard.Tests\Scoreboard.Tests.csproj", "{5A2E751D-E364-41EF-89F3-D774B81E633A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard.Cards", "Scoreboard.Cards\Scoreboard.Cards.csproj", "{FC8BD905-C97A-4412-9213-97D24E3FED7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard.Web", "Scoreboard.Web\Scoreboard.Web.csproj", "{9E31F593-F0A8-463A-89E7-2C6D0CF85644}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FC8BD905-C97A-4412-9213-97D24E3FED7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC8BD905-C97A-4412-9213-97D24E3FED7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC8BD905-C97A-4412-9213-97D24E3FED7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E31F593-F0A8-463A-89E7-2C6D0CF85644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E31F593-F0A8-463A-89E7-2C6D0CF85644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E31F593-F0A8-463A-89E7-2C6D0CF85644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E31F593-F0A8-463A-89E7-2C6D0CF85644}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

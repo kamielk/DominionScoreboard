@@ -1,0 +1,6 @@
+@Scoreboard.Web_HostAddress = http://localhost:5065
+
+GET {{Scoreboard.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

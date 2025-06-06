@@ -10,7 +10,19 @@ public class DominionSetManager : IDominionSetManager
         PropertyNameCaseInsensitive = true,
     };
 
+    private DominionSet[]? Sets = null;
+
     public IEnumerable<DominionSet> GetAllSets()
+    {
+        return Sets ??= [.. LoadAllSets()];
+    }
+
+    public DominionSet? GetSet(string name)
+    {
+        return GetAllSets().FirstOrDefault(set => set.Name == name);
+    }
+
+    private IEnumerable<DominionSet> LoadAllSets()
     {
         // get all json files in Sets
         var assembly = Assembly.GetExecutingAssembly();
@@ -22,7 +34,7 @@ public class DominionSetManager : IDominionSetManager
             using var stream = assembly.GetManifestResourceStream(path);
             using var reader = new StreamReader(stream!);
             var json = reader.ReadToEnd();
-            
+
             var setFile = JsonSerializer.Deserialize<DominionSetFile>(json, _serializerOptions);
             if (setFile == null)
             {
@@ -35,10 +47,5 @@ public class DominionSetManager : IDominionSetManager
                 Cards = setFile.Cards?.Select(representation => new Card(representation.Name, setFile.Name, representation.Cost, representation.Types)) ?? Enumerable.Empty<ICard>()
             };
         }
-    }
-
-    public DominionSet? GetSet(string name)
-    {
-        return GetAllSets().FirstOrDefault(set => set.Name == name);
     }
 }
