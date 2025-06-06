@@ -5,6 +5,11 @@ namespace Scoreboard.Cards;
 
 public class DominionSetManager : IDominionSetManager
 {
+    private readonly JsonSerializerOptions _serializerOptions = new(JsonSerializerDefaults.Web)
+    {
+        PropertyNameCaseInsensitive = true,
+    };
+
     public IEnumerable<DominionSet> GetAllSets()
     {
         // get all json files in Sets
@@ -15,11 +20,15 @@ public class DominionSetManager : IDominionSetManager
         foreach (var path in setPaths)
         {
             using var stream = assembly.GetManifestResourceStream(path);
-            using var reader = new StreamReader(stream);
+            using var reader = new StreamReader(stream!);
             var json = reader.ReadToEnd();
-
-            var setFile = JsonSerializer.Deserialize<DominionSetFile>(json);
             
+            var setFile = JsonSerializer.Deserialize<DominionSetFile>(json, _serializerOptions);
+            if (setFile == null)
+            {
+                continue; // skip if deserialization failed
+            }
+
             yield return new DominionSet
             {
                 Name = setFile.Name,
