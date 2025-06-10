@@ -1,6 +1,3 @@
-<div class="card" [ngStyle]="{'background-image': getBackgroundImageUrl()}">
-  <h2>{{ card.name }}</h2>
-  <div><strong>Expansion:</strong> {{ card.expansion }}</div>
-  <div><strong>Cost:</strong> {{ card.cost.treasure }}</div>
-  <div><strong>Types:</strong> {{ card.types.join(', ') }}</div>
+<div class="card">
+  <img [src]=getBackgroundImageUrl() [alt]=card.name />
 </div>

@@ -1,20 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from '../../models/card.model';
-import { CardDisplayComponent } from "../../components/card-display/card-display.component";
 import { KingdomService } from '../../services/kingdom.service';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { CardWithCountInputComponent } from "../../components/card-with-count-input/card-with-count-input.component";
 
 @Component({
   selector: 'app-kingdom-view',
-  imports: [CardDisplayComponent, MatGridListModule],
+  imports: [MatGridListModule, CardWithCountInputComponent],
   templateUrl: './kingdom-view.component.html',
   styleUrl: './kingdom-view.component.scss'
 })
 export class KingdomViewComponent implements OnInit {
   kingdom: Card[] = [];
   loading = false;
+
+  countsByName: Map<string, number> = new Map<string, number>();
+  points: number = 0;
   
-  constructor(private kingdomService: KingdomService) { }
+  constructor(private kingdomService: KingdomService) {}
 
   ngOnInit(): void {
     this.loadKingdom();
@@ -33,4 +36,18 @@ export class KingdomViewComponent implements OnInit {
     })
   }
 
+  handleCountChanged(card: Card, newCount: number) {
+    this.countsByName.set(card.name, newCount)
+  }
+
+  calculateVictoryPoints() {
+    this.kingdomService.calculateVictoryPoints(this.countsByName).subscribe({
+      next: (response) => {
+        this.points = response.victoryPoints;
+      },
+      error: (error: Error) => {
+        throw error;
+      }
+    })
+  }
 }

@@ -84,7 +84,7 @@ app.MapPost("/calculate-vp", (
         vp += card.GetVictoryPoints(cardAndCounts) * count;
     }
 
-    return Results.Ok(new { VP = vp });
+    return Results.Ok(new { VictoryPoints = vp });
 })
 .WithName("CalculateVictoryPoints");
 
