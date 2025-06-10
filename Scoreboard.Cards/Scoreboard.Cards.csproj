@@ -19,10 +19,12 @@
       <None Remove="Expansions\base-set-2.yaml" />
       <None Remove="Sets\base-cards.json" />
       <None Remove="Sets\base-set-2.json" />
+      <None Remove="Sets\intrigue-2.json" />
       <None Remove="Sets\seaside.json" />
     </ItemGroup>
 
     <ItemGroup>
+      <EmbeddedResource Include="Sets\intrigue-2.json" />
       <EmbeddedResource Include="Sets\seaside.json" />
     </ItemGroup>
 
