@@ -11,16 +11,19 @@ public class DominionSetManager : IDominionSetManager
         PropertyNameCaseInsensitive = true,
     };
 
+    private readonly IEnumerable<ICard> _baseCards;
     private readonly DominionSet[] _sets;
 
     public DominionSetManager()
     {
-        _sets = [.. LoadAllSets()];
+        ICollection<DominionSet> sets = [.. LoadAllSets()];
+        _baseCards = sets.FirstOrDefault(set => set.Name == SetNames.Base)?.Cards ?? [];
+        _sets = [.. sets.Where(set => set.Name != SetNames.Base)];
     }
 
     public IEnumerable<DominionSet> GetAllSets() => _sets;
 
-    public IEnumerable<ICard> GetBaseCards() => _sets.FirstOrDefault(set => set.Name == SetNames.Base)?.Cards ?? [];
+    public IEnumerable<ICard> GetBaseCards() => _baseCards;
 
     public DominionSet? GetSet(string name) => _sets.FirstOrDefault(set => set.Name == name);
 

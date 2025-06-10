@@ -50,14 +50,14 @@ app.MapGet("/kingdom", (
     ILogger<Program> logger
 ) =>
 {
-    var set = setsManager.GetSet(SetNames.BaseSet2nd);
-    if (set == null)
+    var sets = setsManager.GetAllSets();
+    if (sets?.Any() != true)
     {
-        logger.LogWarning("Set not found");
-        return Results.NotFound("Set not found");
+        logger.LogWarning("No sets found");
+        return Results.NotFound("No sets found ");
     }
 
-    return Results.Ok(set.Cards.Shuffle().Take(10));
+    return Results.Ok(sets.SelectMany(x => x.Cards).Shuffle().Take(10));
 })
 .WithName("GetKingdom");
 
@@ -81,8 +81,8 @@ app.MapPost("/calculate-vp", (
         var card = sets.SelectMany(s => s.Cards).FirstOrDefault(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
         if (card == null)
         {
-            logger.LogWarning("Card '{name}' not found in any set", name);
-            return Results.NotFound($"Card '{name}' not found in any set");
+            logger.LogWarning("Card '{name}' not found in any sets", name);
+            return Results.NotFound($"Card '{name}' not found in any sets");
         }
         cardAndCounts.Add(new(card, count));
     }
