@@ -2,3 +2,16 @@ GET {{HostAddress}}/kingdom/
 Accept: application/json
 
 ###
+
+POST {{HostAddress}}/calculate-vp/
+Accept: application/json
+Content-Type: application/json
+{
+  "gardens" : 3,
+  "copper" : 7,
+  "gold" : 3,
+  "silver" : 3,
+  "smithy" : 2,
+  "village" : 2
+}
+### should result in 6

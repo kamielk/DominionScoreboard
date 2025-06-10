@@ -4,15 +4,17 @@ namespace Scoreboard.Cards.VictoryPoints;
 
 public static class VpAlgorithmParser
 {
-    public static int Evaluate(string alg, PlayerDeck deck)
+    public static int Evaluate(string alg, IEnumerable<CardAndCount> cardAndCounts)
     {
+        var deck = new PlayerDeck(cardAndCounts);
+
         // always floor result so we get an integer value
         var expression = new FloorExpr(Expr.End().Parse(alg));
         return expression.Evaluate(deck);
     }
 
     // Matches strings like "count(type:Action)" or "count(name:Duchy)" or "count(*)"
-    private static readonly Parser<IExpression<double>> CountExpr =
+    private static readonly Parser<IExpression<double>> _countExpr =
         Parse.String("count(")
             .Then(_ =>
                 Parse.String("*").Select(_ => new CountExpr(ExpressionConstants.Any, ExpressionConstants.Any))
@@ -55,7 +57,7 @@ public static class VpAlgorithmParser
 
     private static readonly Parser<IExpression<double>> BinaryExpr =
        Parse.ChainOperator(Operator.Token(),
-           CountExpr.Or(ConstExpr),
+           _countExpr.Or(ConstExpr),
            (op, left, right) => new BinaryExpr(left, op, right)
        );
 
@@ -65,6 +67,6 @@ public static class VpAlgorithmParser
     // The top-level entry point
     private static readonly Parser<IExpression<double>> Expr =
         BinaryExpr
-            .Or(CountExpr)
+            .Or(_countExpr)
             .Or(ConstExpr);
 }

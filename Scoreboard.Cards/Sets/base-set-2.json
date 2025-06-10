@@ -71,7 +71,7 @@
         "victory"
       ],
       "abilities": [],
-      "vpAlg": "?"
+      "vpAlg": "count(*) / 10"
     },
     {
       "name": "Laboratory",

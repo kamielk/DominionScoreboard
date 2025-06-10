@@ -1,23 +1,27 @@
 ﻿namespace Scoreboard.Cards;
 
-public class PlayerDeck
+public class PlayerDeck(IEnumerable<CardAndCount> Cards)
 {
-    public List<Card> Cards { get; set; } = [];
+    public List<CardAndCount> CardAndCounts { get; set; } = [.. Cards];
 
-    public int CountAll() => Cards.Count;
+    public int CountAll() => CardAndCounts.Aggregate(0, (total, cardAndCount) => total + cardAndCount.Count);
 
     public int CountByName(string name)
     {
-        return Cards.Count(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        return CardAndCounts
+            .Where(c => c.Card.Name.Equals(name, StringComparison.OrdinalIgnoreCase))
+            .Aggregate(0, (total, cardAndCount) => total + cardAndCount.Count);
     }
 
     public int CountByType(string type)
     {
-        return Cards.Count(c => c.Types.Contains(type, StringComparer.OrdinalIgnoreCase));
+        return CardAndCounts
+            .Where(c => c.Card.Types.Contains(type, StringComparer.OrdinalIgnoreCase))
+            .Aggregate(0, (total, cardAndCount) => total + cardAndCount.Count);
     }
 
     public int CountDistinctNames()
     {
-        return Cards.Select(c => c.Name).Distinct(StringComparer.OrdinalIgnoreCase).Count();
+        return CardAndCounts.Select(c => c.Card.Name).Distinct(StringComparer.OrdinalIgnoreCase).Count();
     }
 }

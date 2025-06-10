@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using Scoreboard.Cards;
 using Scoreboard.Web;
 
@@ -50,5 +51,41 @@ app.MapGet("/kingdom", (
     return Results.Ok(set.Cards.Shuffle().Take(10));
 })
 .WithName("GetKingdom");
+
+// calculates victory points for a given deck
+app.MapPost("/calculate-vp", (
+    IDominionSetManager setsManager,
+    ILogger<Program> logger,
+    [FromBody] Dictionary<string, int> cardCountByName
+) =>
+{
+    var sets = setsManager.GetAllSets().ToList();
+    if (sets.Count == 0)
+    {
+        logger.LogWarning("No sets found");
+        return Results.NotFound("No sets found");
+    }
+
+    List<CardAndCount> cardAndCounts = [];
+    foreach (var (name, count) in cardCountByName)
+    {
+        var card = sets.SelectMany(s => s.Cards).FirstOrDefault(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        if (card == null)
+        {
+            logger.LogWarning("Card '{name}' not found in any set", name);
+            return Results.NotFound($"Card '{name}' not found in any set");
+        }
+        cardAndCounts.Add(new(card, count));
+    }
+
+    var vp = 0;
+    foreach (var (card, count) in cardAndCounts)
+    {
+        vp += card.GetVictoryPoints(cardAndCounts) * count;
+    }
+
+    return Results.Ok(new { VP = vp });
+})
+.WithName("CalculateVictoryPoints");
 
 app.Run();

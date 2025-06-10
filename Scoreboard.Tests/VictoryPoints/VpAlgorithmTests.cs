@@ -25,33 +25,27 @@ public class VpAlgorithmTests
     public void CountAll_ShouldReturn_TotalCards()
     {
         var fixture = CreateFixture();
-        var deck = new PlayerDeck
-        {
-            Cards = [.. fixture.CreateMany<Card>(5)]
-        };
-
-        var result = VpAlgorithmParser.Evaluate("count(*)", deck);
-        result.ShouldBe(5);
+        ICollection<CardAndCount> cardAndCounts = [.. fixture.CreateMany<Card>(5).Select(c => new CardAndCount(c, 2))];
+        var result = VpAlgorithmParser.Evaluate("count(*)", cardAndCounts);
+        result.ShouldBe(10);
     }
 
     [Fact]
     public void CountByType_ShouldReturn_OnlyMatchingTypes()
     {
         var fixture = CreateFixture();
-        var actionCards = fixture.Build<Card>()
+        var actionCard = fixture.Build<Card>()
             .With(c => c.Types, ["Action"])
-            .CreateMany(3);
+            .Create();
 
-        var otherCards = fixture.Build<Card>()
+        var actionCardAndCount = new CardAndCount(actionCard, 3);
+
+        var otherCard = fixture.Build<Card>()
             .With(c => c.Types, ["Treasure"])
-            .CreateMany(2);
+            .Create();
+        var otherCardAndCount = new CardAndCount(otherCard, 2);
 
-        var deck = new PlayerDeck
-        {
-            Cards = [.. actionCards, .. otherCards]
-        };
-
-        var result = VpAlgorithmParser.Evaluate("count(type:Action)", deck);
+        var result = VpAlgorithmParser.Evaluate("count(type:Action)", [actionCardAndCount, otherCardAndCount]);
         result.ShouldBe(3);
     }
 
@@ -59,22 +53,22 @@ public class VpAlgorithmTests
     public void CountByName_ShouldReturn_MatchingCardNames()
     {
         var fixture = CreateFixture();
-        var duchies = fixture.Build<Card>()
+        var duchy = fixture.Build<Card>()
             .With(c => c.Name, "Duchy")
             .With(c => c.Types, ["Victory"])
-            .CreateMany(2);
+            .Create();
 
-        var provinces = fixture.Build<Card>()
+        var duchyCardAndCount = new CardAndCount(duchy, 2);
+
+        var province = fixture.Build<Card>()
             .With(c => c.Name, "Province")
             .With(c => c.Types, ["Victory"])
-            .CreateMany(1);
+            .Create();
 
-        var deck = new PlayerDeck
-        {
-            Cards = [.. duchies, .. provinces]
-        };
+        var provincesCardAndCount = new CardAndCount(province, 1);
 
-        var result = VpAlgorithmParser.Evaluate("count(name:Duchy)", deck);
+
+        var result = VpAlgorithmParser.Evaluate("count(name:Duchy)", [duchyCardAndCount, provincesCardAndCount]);
         result.ShouldBe(2);
     }
 
@@ -82,43 +76,37 @@ public class VpAlgorithmTests
     public void Evaluate_ShouldRoundDown()
     {
         var fixture = CreateFixture();
-        var actions = fixture.Build<Card>()
+        var actionCard = fixture.Build<Card>()
             .With(c => c.Types, ["Action"])
-            .CreateMany(4); // count / 3 = 1.33 => floor = 1
-
-        var deck = new PlayerDeck
-        {
-            Cards = [.. actions]
-        };
+            .Create();
+         CardAndCount cardAndCount = new(actionCard, 4); // count / 3 = 1.33 => floor = 1
 
         //count(type: Action)
-        var result = VpAlgorithmParser.Evaluate("count(type:Action) / 3", deck);
+        var result = VpAlgorithmParser.Evaluate("count(type:Action) / 3", [cardAndCount]);
         result.ShouldBe(1);
     }
 
     [Fact]
     public void CountDistinctNames_ShouldReturnUniqueCardNames()
     {
-        var deck = new PlayerDeck
-        {
-            Cards =
-            [
-                new("Village", "", new Dictionary<string, int>(), ["Action"]),
-                new("Village", "", new Dictionary<string, int>(), ["Action"]),
-                new("Smithy", "", new Dictionary<string, int>(), ["Action"]),
-                new("Gold", "", new Dictionary<string, int>(), ["Treasure"])
-            ]
-        };
+        ICollection<ICard> cards =
+        [
+            new Card("Village", "", new Dictionary<string, int>(), ["Action"]),
+            new Card("Village", "", new Dictionary<string, int>(), ["Action"]),
+            new Card("Smithy", "", new Dictionary<string, int>(), ["Action"]),
+            new Card("Gold", "", new Dictionary<string, int>(), ["Treasure"])
+        ];
 
-        var result = VpAlgorithmParser.Evaluate("count(distinct:name)", deck);
+        var cardAndCounts = cards.Select(c => new CardAndCount(c, 1));
+
+        var result = VpAlgorithmParser.Evaluate("count(distinct:name)", cardAndCounts);
         result.ShouldBe(3);
     }
 
     [Fact]
     public void DeckWithNoCards_CountShouldBeZero()
     {
-        var deck = new PlayerDeck { Cards = [] };
-        var result = VpAlgorithmParser.Evaluate("count(*)", deck);
+        var result = VpAlgorithmParser.Evaluate("count(*)", []);
         result.ShouldBe(0);
     }
 
@@ -126,7 +114,7 @@ public class VpAlgorithmTests
     [Fact]
     public void NegativeInteger_ShouldWork()
     {
-        var result = VpAlgorithmParser.Evaluate("-1", new());
+        var result = VpAlgorithmParser.Evaluate("-1", []);
         result.ShouldBe(-1);
     }
 }

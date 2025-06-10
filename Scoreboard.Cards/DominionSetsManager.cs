@@ -1,5 +1,6 @@
 using System.Reflection;
 using System.Text.Json;
+using Scoreboard.Cards.VictoryPoints;
 
 namespace Scoreboard.Cards;
 
@@ -45,7 +46,14 @@ public class DominionSetManager : IDominionSetManager
             {
                 Name = setFile.Name,
                 Cards = setFile.Cards?
-                    .Select(representation => new Card(representation.Name, setFile.Name, representation.Cost, representation.Types)) ?? Enumerable.Empty<ICard>()
+                    .Select(representation => new Card(representation.Name,
+                        setFile.Name,
+                        representation.Cost,
+                        representation.Types,
+                        representation.VpAlg is null
+                            ? null 
+                            : (IEnumerable<CardAndCount> deck) => VpAlgorithmParser.Evaluate(representation.VpAlg, deck)))
+                        ?? Enumerable.Empty<ICard>()
             };
         }
     }
