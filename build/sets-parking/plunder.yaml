@@ -1,0 +1,436 @@
+name: Plunder
+cards:
+  - name: Cage
+    cost:
+      treasure: 2
+    isDrawer: true
+    isDuration: true
+    isMultiDrawer: true
+    isTerminal: true
+    isTreasure: true
+
+  - name: Grotto
+    cost:
+      treasure: 2
+    isAction: true
+    isDrawer: true
+    isDuration: true
+
+  - name: Jewelled Egg
+    cost:
+      treasure: 2
+    isBuySupplier: true
+    isTreasure: true
+    isLootSupplier: true
+
+  - name: Search
+    cost:
+      treasure: 2
+    isAction: true
+    isDuration: true
+    isTerminal: true
+    isLootSupplier: true
+
+  - name: Shaman
+    cost:
+      treasure: 2
+    isAction: true
+    isTrashing: true
+
+  - name: Secluded Shrine
+    cost:
+      treasure: 3
+    isAction: true
+    isDuration: true
+    isTrashing: true
+
+  - name: Siren
+    cost:
+      treasure: 3
+    isAction: true
+    isAttack: true
+    isDrawer: true
+    isMultiDrawer: true
+    isTerminal: true
+    isTrashing: true
+    isDuration: true
+
+  - name: Stowaway
+    cost:
+      treasure: 3
+    isAction: true
+    isDrawer: true
+    isDuration: true
+    isMultiDrawer: true
+    isReaction: true
+    isTerminal: true
+
+  - name: Taskmaster
+    cost:
+      treasure: 3
+    isAction: true
+    isDuration: true
+
+  - name: Abundance
+    cost:
+      treasure: 4
+    isBuySupplier: true
+    isDuration: true
+    isTreasure: true
+      
+  - name: Cabin Boy
+    cost:
+      treasure: 4
+    isAction: true
+    isDrawer: true
+    isDuration: true
+
+  - name: Crucible
+    cost:
+      treasure: 4
+    isTrashing: true
+    isTreasure: true
+
+  - name: Flagship
+    cost:
+      treasure: 4
+    isAction: true
+    isDuration: true
+    isTerminal: true
+    isCommand: true
+
+  - name: Fortune Hunter
+    cost:
+      treasure: 4
+    isAction: true
+    isTerminal: true
+
+  - name: Gondola
+    cost:
+      treasure: 4
+    isDuration: true
+    isTreasure: true
+
+  - name: Harbor Village
+    cost:
+      treasure: 4
+    isAction: true
+    isActionSupplier: true
+    isDrawer: true
+
+  - name: Landing Party
+    cost:
+      treasure: 4
+    isAction: true
+    isActionSupplier: true
+    isDrawer: true
+    isDuration: true
+    isMultiDrawer: true
+
+  - name: Mapmaker
+    cost:
+      treasure: 4
+    isAction: true
+    isDrawer: true
+    isMultiDrawer: true
+    isReaction: true
+    isTerminal: true
+
+  - name: Maroon
+    cost:
+      treasure: 4
+    isAction: true
+    isDrawer: true
+    isMultiDrawer: true
+    isTerminal: true
+    isTrashing: true
+
+  - name: Rope
+    cost:
+      treasure: 4
+    isBuySupplier: true
+    isDrawer: true
+    isDuration: true
+    isTrashing: true
+    isTreasure: true
+
+  - name: Swamp Shacks
+    cost:
+      treasure: 4
+    isAction: true
+    isActionSupplier: true
+    isDrawer: true
+    isMultiDrawer: true
+
+  - name: Tools
+    cost:
+      treasure: 4
+    isTreasure: true
+
+  - name: Buried Treasure
+    cost:
+      treasure: 5
+    isBuySupplier: true
+    isDuration: true
+    isTreasure: true
+      
+  - name: Crew
+    cost:
+      treasure: 5
+    isAction: true
+    isDrawer: true
+    isDuration: true
+    isMultiDrawer: true
+    isTerminal: true
+      
+  - name: Cutthroat
+    cost:
+      treasure: 5
+    isAction: true
+    isAttack: true
+    isDuration: true
+    isTerminal: true
+    isLootSupplier: true
+      
+  - name: Enlarge
+    cost:
+      treasure: 5
+    isAction: true
+    isDuration: true
+    isTerminal: true
+    isTrashing: true
+      
+  - name: Figurine
+    cost:
+      treasure: 5
+    isBuySupplier: true
+    isDrawer: true
+    isMultiDrawer: true
+    isTreasure: true
+      
+  - name: First Mate
+    cost:
+      treasure: 5
+    isAction: true
+    isDrawer: true
+    isMultiDrawer: true
+
+  - name: Frigate
+    cost:
+      treasure: 5
+    isAction: true
+    isAttack: true
+    isDuration: true
+    isTerminal: true
+      
+  - name: Longship
+    cost:
+      treasure: 5
+    isAction: true
+    isActionSupplier: true
+    isDrawer: true
+    isDuration: true
+    isMultiDrawer: true
+      
+  - name: Mining Road
+    cost:
+      treasure: 5
+    isAction: true
+    isBuySupplier: true
+      
+  - name: Pendant
+    cost:
+      treasure: 5
+    isTreasure: true
+      
+  - name: Pickaxe
+    cost:
+      treasure: 5
+    isTrashing: true
+    isTreasure: true
+    isLootSupplier: true
+      
+  - name: Pilgrim
+    cost:
+      treasure: 5
+    isAction: true
+    isDrawer: true
+    isMultiDrawer: true
+      
+  - name: Quartermaster
+    cost:
+      treasure: 5
+    isAction: true
+    isDuration: true
+      
+  - name: Silver Mine
+    cost:
+      treasure: 5
+    isTreasure: true
+      
+  - name: Trickster
+    cost:
+      treasure: 5
+    isAction: true
+    isAttack: true
+    isTerminal: true
+      
+  - name: Wealthy Village
+    cost:
+      treasure: 5
+    isAction: true
+    isActionSupplier: true
+    isDrawer: true
+    isLootSupplier: true
+      
+  - name: Sack of Loot
+    cost:
+      treasure: 6
+    isBuySupplier: true
+    isTreasure: true
+    isLootSupplier: true
+
+  - name: King's Cache
+    cost:
+      treasure: 7
+    isTreasure: true
+  
+events:
+  - name: Bury
+    cost:
+      treasure: 1
+
+  - name: Avoid
+    cost:
+      treasure: 2
+
+  - name: Deliver
+    cost:
+      treasure: 2
+
+  - name: Peril
+    cost:
+      treasure: 2
+
+  - name: Rush
+    cost:
+      treasure: 2
+
+  - name: Foray
+    cost:
+      treasure: 3
+
+  - name: Launch
+    cost:
+      treasure: 3
+
+  - name: Mirror
+    cost:
+      treasure: 3
+
+  - name: Prepare
+    cost:
+      treasure: 3
+
+  - name: Scrounge
+    cost:
+      treasure: 3
+
+  - name: Journey
+    cost:
+      treasure: 4
+
+  - name: Maelstrom
+    cost:
+      treasure: 4
+
+  - name: Looting
+    cost:
+      treasure: 6
+
+  - name: Invasion
+    cost:
+      treasure: 10
+
+  - name: Prosper
+    cost:
+      treasure: 10
+
+traits:
+  - name: Cheap
+  - name: Cursed
+  - name: Fated
+  - name: Fawning
+  - name: Friendly
+  - name: Hasty
+  - name: Inherited
+  - name: Inspiring
+  - name: Nearby
+  - name: Patient
+  - name: Pious
+  - name: Reckless
+  - name: Rich
+  - name: Shy
+  - name: Tireless
+
+othercards:
+  - name: Amphora
+    type: Loot - Duration - Treasure
+    cost:
+      treasure: 7
+  - name: Doubloons
+    type: Loot - Treasure
+    cost: 
+      treasure: 7
+  - name: Endless Chalice
+    type: Loot - Duration - Treasure
+    cost:
+      treasure: 7
+  - name: Figurehead
+    type: Loot - Duration - Treasure
+    cost:
+      treasure: 7
+  - name: Hammer
+    type: Loot - Treasure
+    cost:
+      treasure: 7
+  - name: Insignia
+    type: Loot - Treasure
+    cost:
+      treasure: 7
+  - name: Jewels
+    type: Loot - Duration - Treasure
+    cost:
+      treasure: 7
+  - name: Orb
+    type: Loot - Treasure
+    cost:
+      treasure: 7
+  - name: Prize Goat
+    type: Loot - Treasure
+    cost:
+      treasure: 7
+  - name: Puzzle Box
+    type: Loot - Treasure
+    cost:
+      treasure: 7
+  - name: Sextant
+    type: Loot - Treasure
+    cost:
+      treasure: 7
+  - name: Shield
+    type: Loot - Reaction - Treasure
+    cost:
+      treasure: 7
+  - name: Spell Scroll
+    type: Loot - Action - Treasure
+    cost:
+      treasure: 7
+  - name: Staff
+    type: Loot - Treasure
+    cost:
+      treasure: 7
+  - name: Sword
+    type: Loot - Attack - Treasure
+    cost:
+      treasure: 7

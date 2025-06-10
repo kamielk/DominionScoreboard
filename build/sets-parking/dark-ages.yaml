@@ -1,0 +1,481 @@
+name: Dark Ages
+cards:
+  - name: Armory
+    cost:
+      treasure: 4
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Vagrant
+    cost:
+      treasure: 2
+      potion: 0
+    isAttack: false
+    isAction: true
+    isDrawer: true
+    isMultiDrawer: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Catacombs
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: false
+    isAction: true
+    isDrawer: true
+    isMultiDrawer: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Count
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: true
+    isReaction: false
+
+  - name: Knights
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: true
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Fortress
+    cost:
+      treasure: 4
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+    isActionSupplier: true
+
+  - name: Scavenger
+    cost:
+      treasure: 4
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Market Square
+    cost:
+      treasure: 3
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: true
+    isBuySupplier: true
+
+  - name: Urchin
+    cost:
+      treasure: 3
+      potion: 0
+    isAttack: true
+    isAction: true
+    isDrawer: true
+    isMultiDrawer: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Rats
+    cost:
+      treasure: 4
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: true
+    isReaction: false
+
+  - name: Sage
+    cost:
+      treasure: 3
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Forager
+    cost:
+      treasure: 3
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+    isBuySupplier: true
+
+  - name: Altar
+    cost:
+      treasure: 6
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: true
+    isReaction: false
+
+  - name: Procession
+    cost:
+      treasure: 4
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: true
+    isReaction: false
+
+  - name: Squire
+    cost:
+      treasure: 2
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+    isActionSupplier: true
+    isBuySupplier: true
+
+  - name: Beggar
+    cost:
+      treasure: 2
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: true
+
+  - name: Poor House
+    cost:
+      treasure: 1
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Death Cart
+    cost:
+      treasure: 4
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: true
+    isReaction: false
+
+  - name: Wandering Minstrel
+    cost:
+      treasure: 4
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+    isActionSupplier: true
+
+  - name: Ironmonger
+    cost:
+      treasure: 4
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+    isActionSupplier: false
+
+  - name: Hermit
+    cost:
+      treasure: 3
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: true
+    isReaction: false
+    isDrawer: true
+    isMultiDrawer: true
+
+  - name: Pillage
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: true
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Mystic
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Storeroom
+    cost:
+      treasure: 3
+      potion: 0
+    isAttack: false
+    isAction: true
+    isDrawer: true
+    isMultiDrawer: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+    isBuySupplier: true
+
+  - name: Hunting Grounds
+    cost:
+      treasure: 6
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Graverobber
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: true
+    isReaction: false
+
+  - name: Counterfeit
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: false
+    isAction: false
+    isTreasure: true
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+    isBuySupplier: true
+
+  - name: Cultist
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: true
+    isAction: true
+    isDrawer: true
+    isMultiDrawer: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Rogue
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: true
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Marauder
+    cost:
+      treasure: 4
+      potion: 0
+    isAttack: true
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Band of Misfits
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Junk Dealer
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+
+  - name: Feodum
+    cost:
+      treasure: 4
+      potion: 0
+    isAttack: false
+    isAction: false
+    isTreasure: false
+    isVictory: true
+    isTrashing: false
+    isReaction: false
+
+  - name: Rebuild
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: true
+    isReaction: false
+
+  - name: Bandit Camp
+    cost:
+      treasure: 5
+      potion: 0
+    isAttack: false
+    isAction: true
+    isTreasure: false
+    isVictory: false
+    isTrashing: false
+    isReaction: false
+    isActionSupplier: true
+
+othercards:
+  - name: Abandoned Mine
+    type: Ruins
+  - name: Ruined Library
+    type: Ruins
+  - name: Ruined Market
+    type: Ruins
+  - name: Ruined Village
+    type: Ruins
+  - name: Survivors
+    type: Ruins
+    
+  - name: Madman
+    type: Action - Non-Supply Cards
+  - name: Mercenary
+    type: Action- Attack - Non-Supply Cards
+  - name: Spoils
+    type: Treasure - Non-Supply Cards
+    
+  - name: Hovel
+    type: Reaction - Shelter
+    cost:
+      treasure: 1
+  - name: Necropolis
+    type: Action - Shelter
+    cost:
+      treasure: 1
+  - name: Overgrown Estate
+    type: Victory - Shelter
+    cost:
+      treasure: 1
+    
+  - name: Dame Anna
+    type: Action - Attack - Knight
+    cost:
+      treasure: 5
+  - name: Dame Josephine
+    type: Action - Attack - Victory - Knight
+    cost:
+      treasure: 5
+  - name: Dame Molly
+    type: Action - Attack - Knight
+    cost:
+      treasure: 5
+  - name: Dame Natalie
+    type: Action - Attack - Knight
+    cost:
+      treasure: 5
+  - name: Dame Sylvia
+    type: Action - Attack - Knight
+    cost:
+      treasure: 5
+  - name: Sir Bailey
+    type: Action - Attack - Knight
+    cost:
+      treasure: 5
+  - name: Sir Destry
+    type: Action - Attack - Knight
+    cost:
+      treasure: 5
+  - name: Sir Martin
+    type: Action - Attack - Knight
+    cost:
+      treasure: 4
+  - name: Sir Michael
+    type: Action - Attack - Knight
+    cost:
+      treasure: 5
+  - name: Sir Vander
+    type: Action - Attack - Knight
+    cost:
+      treasure: 5
