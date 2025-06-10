@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\images\base-set-2nd\" />
+    <Folder Include="wwwroot\images\base-cards\" />
   </ItemGroup>
 
 </Project>

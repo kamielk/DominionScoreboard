@@ -8,6 +8,10 @@ import { VictoryPointsResponse } from './models/victory-points-response';
 export class KingdomService {
   constructor(private http: HttpClient) { }
 
+  getBaseCards() {
+    return this.http.get<Card[]>('/base-cards');
+  }
+
   getRandomKingdom() : Observable<Card[]> {
     return this.http.get<Card[]>('/kingdom');
   }

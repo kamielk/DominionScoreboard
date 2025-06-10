@@ -1,3 +1,8 @@
+GET {{HostAddress}}/base-cards/
+Accept: application/json
+
+###
+
 GET {{HostAddress}}/kingdom/
 Accept: application/json
 

@@ -1,0 +1,20 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; // Prevent scrollbars
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; // 100% of viewport
+  overflow: hidden;
+}
+
+.app-content {
+  flex: 1 1 auto;
+  overflow: auto; // Allow internal scrolling only if needed
+  display: flex;
+  flex-direction: column;
+}

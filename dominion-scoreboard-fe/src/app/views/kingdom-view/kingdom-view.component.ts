@@ -11,6 +11,7 @@ import { CardWithCountInputComponent } from "../../components/card-with-count-in
   styleUrl: './kingdom-view.component.scss'
 })
 export class KingdomViewComponent implements OnInit {
+  baseCards: Card[] = [];
   kingdom: Card[] = [];
   loading = false;
 
@@ -20,7 +21,19 @@ export class KingdomViewComponent implements OnInit {
   constructor(private kingdomService: KingdomService) {}
 
   ngOnInit(): void {
+    this.getBaseCards();
     this.loadKingdom();
+  }
+
+  getBaseCards() {
+    this.kingdomService.getBaseCards().subscribe({
+      next: (cards) => {
+        this.baseCards = cards;
+      },
+      error: (error: Error) => {
+        throw error;
+      },
+    })
   }
 
   loadKingdom() {

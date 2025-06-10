@@ -1,8 +1,16 @@
+<mat-grid-list cols="7" rowHeight="2:3" class="base-cards">
+    @for (card of baseCards; track $index) {
+    <mat-grid-tile>
+        <app-card-with-count-input [card]="card" (onCountChanged)="this.handleCountChanged(card, $event)" />
+    </mat-grid-tile>
+    }
+</mat-grid-list>
+
 @if (loading){
 <div>Loading kingdom...</div>
 }
 @else {
-<mat-grid-list cols="5" rowHeight="1:1" class="kingdom-grid">
+<mat-grid-list cols="5" rowHeight="1:1" class="kingdom-cards">
     @for (card of kingdom; track $index) {
     <mat-grid-tile>
         <app-card-with-count-input [card]="card" (onCountChanged)="this.handleCountChanged(card, $event)" />

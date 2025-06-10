@@ -35,6 +35,15 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.MapGet("/base-cards",(
+    IDominionSetManager setsManager,
+    ILogger<Program> logger
+) =>
+{
+    return Results.Ok(setsManager.GetBaseCards().ToList());
+})
+.WithName("GetBaseCards");
+
 // gets a random kingdom
 app.MapGet("/kingdom", (
     IDominionSetManager setsManager,

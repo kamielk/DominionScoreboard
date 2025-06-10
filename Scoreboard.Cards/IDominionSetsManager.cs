@@ -9,6 +9,12 @@ public interface IDominionSetManager
     /// Loads all the available <see cref="DominionSet"/>s
     /// </summary>
     public IEnumerable<DominionSet> GetAllSets();
+    
+    /// <summary>
+    /// Loads the base cards
+    /// </summary>
+    /// <returns></returns>
+    public IEnumerable<ICard> GetBaseCards();
 
     /// <summary>
     /// Gets a single set with given <paramref name="name"/>
