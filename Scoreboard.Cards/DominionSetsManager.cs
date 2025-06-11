@@ -56,7 +56,7 @@ public class DominionSetManager : IDominionSetManager
                         representation.Types,
                         representation.VpAlg is null
                             ? null 
-                            : (IEnumerable<CardAndCount> deck) => VpAlgorithmParser.Evaluate(representation.VpAlg, deck)))
+                            : (IEnumerable<CardAndCount> deck, ICard currentCard) => VpAlgorithmParser.Evaluate(representation.VpAlg, deck, currentCard)))
                         ?? Enumerable.Empty<ICard>()
             };
         }

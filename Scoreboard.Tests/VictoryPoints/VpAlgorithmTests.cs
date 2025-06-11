@@ -1,5 +1,6 @@
 ﻿using AutoFixture;
 using AutoFixture.AutoNSubstitute;
+using NSubstitute;
 using Scoreboard.Cards;
 using Scoreboard.Cards.VictoryPoints;
 using Shouldly;
@@ -26,7 +27,8 @@ public class VpAlgorithmTests
     {
         var fixture = CreateFixture();
         ICollection<CardAndCount> cardAndCounts = [.. fixture.CreateMany<Card>(5).Select(c => new CardAndCount(c, 2))];
-        var result = VpAlgorithmParser.Evaluate("count(*)", cardAndCounts);
+        var currentCard = cardAndCounts.First().Card;
+        var result = VpAlgorithmParser.Evaluate("count(*)", cardAndCounts, currentCard);
         result.ShouldBe(10);
     }
 
@@ -45,7 +47,7 @@ public class VpAlgorithmTests
             .Create();
         var otherCardAndCount = new CardAndCount(otherCard, 2);
 
-        var result = VpAlgorithmParser.Evaluate("count(type:Action)", [actionCardAndCount, otherCardAndCount]);
+        var result = VpAlgorithmParser.Evaluate("count(type:Action)", [actionCardAndCount, otherCardAndCount], Arg.Any<ICard>());
         result.ShouldBe(3);
     }
 
@@ -55,7 +57,7 @@ public class VpAlgorithmTests
         var fixture = CreateFixture();
         var duchy = fixture.Build<Card>()
             .With(c => c.Name, "Duchy")
-            .With(c => c.Types, ["Victory"])
+            .With(c => c.Types, ["Distant Lands"])
             .Create();
 
         var duchyCardAndCount = new CardAndCount(duchy, 2);
@@ -65,10 +67,9 @@ public class VpAlgorithmTests
             .With(c => c.Types, ["Victory"])
             .Create();
 
-        var provincesCardAndCount = new CardAndCount(province, 1);
+        var provincesCardAndCount = new CardAndCount(province, 3);
 
-
-        var result = VpAlgorithmParser.Evaluate("count(name:Duchy)", [duchyCardAndCount, provincesCardAndCount]);
+        var result = VpAlgorithmParser.Evaluate("count(name:Duchy)", [duchyCardAndCount, provincesCardAndCount], Arg.Any<ICard>());
         result.ShouldBe(2);
     }
 
@@ -82,7 +83,7 @@ public class VpAlgorithmTests
          CardAndCount cardAndCount = new(actionCard, 4); // count / 3 = 1.33 => floor = 1
 
         //count(type: Action)
-        var result = VpAlgorithmParser.Evaluate("count(type:Action) / 3", [cardAndCount]);
+        var result = VpAlgorithmParser.Evaluate("count(type:Action) / 3", [cardAndCount], Arg.Any<ICard>());
         result.ShouldBe(1);
     }
 
@@ -99,14 +100,14 @@ public class VpAlgorithmTests
 
         var cardAndCounts = cards.Select(c => new CardAndCount(c, 1));
 
-        var result = VpAlgorithmParser.Evaluate("count(distinct:name)", cardAndCounts);
+        var result = VpAlgorithmParser.Evaluate("count(distinct:name)", cardAndCounts, Arg.Any<ICard>());
         result.ShouldBe(3);
     }
 
     [Fact]
     public void DeckWithNoCards_CountShouldBeZero()
     {
-        var result = VpAlgorithmParser.Evaluate("count(*)", []);
+        var result = VpAlgorithmParser.Evaluate("count(*)", [], Arg.Any<ICard>());
         result.ShouldBe(0);
     }
 
@@ -114,7 +115,21 @@ public class VpAlgorithmTests
     [Fact]
     public void NegativeInteger_ShouldWork()
     {
-        var result = VpAlgorithmParser.Evaluate("-1", []);
+        var result = VpAlgorithmParser.Evaluate("-1", [], Arg.Any<ICard>());
         result.ShouldBe(-1);
+    }
+
+    [Fact]
+    public void ConditionalExpression_ShouldEvaluateCorrectly()
+    {
+        var fixture = CreateFixture();
+        var actionCard = fixture.Build<Card>()
+            .With(c => c.Types, ["Action"])
+            .Create();
+        var actionCardAndCount = new CardAndCount(actionCard, 3);
+        var otherCardAndCount = new CardAndCount(fixture.Create<Card>(), 2);
+        // e.g., "count(type:Action) > 2 ? 5 : 0"
+        var result = VpAlgorithmParser.Evaluate("count(type:Action) > 2 ? 5 : 0", [actionCardAndCount, otherCardAndCount], Arg.Any<ICard>());
+        result.ShouldBe(5);
     }
 }

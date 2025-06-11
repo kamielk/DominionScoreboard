@@ -1,5 +1,3 @@
-using Scoreboard.Cards;
-
 namespace Scoreboard.Cards;
 
 /// <summary>
@@ -40,4 +38,9 @@ public interface ICard
     /// </summary>
     /// <param name="playerCards">the player's cards</param>
     int GetVictoryPoints(IEnumerable<CardAndCount> cardAndCounts);
+
+    /// <summary>
+    /// Whether this card is on the tavern mat or not
+    /// </summary>
+    bool IsOnTavernMat { get; }
 }

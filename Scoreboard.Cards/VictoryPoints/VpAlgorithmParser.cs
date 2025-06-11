@@ -4,13 +4,13 @@ namespace Scoreboard.Cards.VictoryPoints;
 
 public static class VpAlgorithmParser
 {
-    public static int Evaluate(string alg, IEnumerable<CardAndCount> cardAndCounts)
+    public static int Evaluate(string alg, IEnumerable<CardAndCount> cardAndCounts, ICard currentCard)
     {
         var deck = new PlayerDeck(cardAndCounts);
 
         // always floor result so we get an integer value
         var expression = new FloorExpr(Expr.End().Parse(alg));
-        return expression.Evaluate(deck);
+        return expression.Evaluate(deck, currentCard);
     }
 
     // Matches strings like "count(type:Action)" or "count(name:Duchy)" or "count(*)"
